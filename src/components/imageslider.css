@@ -26,6 +26,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .image{
@@ -92,14 +93,11 @@ h2{
     font-size: 2rem;
 }
 
-@media (max-width:480px) {
+@media (max-width:420px) {
     html{
         font-size: 10px;
     }
-    .slider{
-       flex-wrap: wrap;
-
-    }
+   
 
     .image{
         width: 2rem;
@@ -107,15 +105,22 @@ h2{
     
 }
 
-@media (max-width:720px) and (min-width:480px){
+@media (max-width:620px) and (min-width:420px){
+    html{
+        font-size: 10px;
+    }
+    
+
+    .image{
+        width: 3rem;
+    }
+}
+
+@media (max-width:1020px) and (min-width:620px){
     html{
         font-size: 12px;
     }
-    .slider{
-       flex-wrap: wrap;
-
-    }
-
+    
     .image{
         width: 4rem;
     }
