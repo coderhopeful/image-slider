@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Montaga&display=swap');
+
+*{
+    box-sizing: border-box;
+    background-color: black;
+
+}
+
+h1{
+    font-family: 'Montaga', serif;
+    text-align: center;
+    font-size: 3rem;
+    color:white;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.slider{
+    position: relative;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+    width: 8rem;
+    height: 30vh;
+    border-radius: 1.2rem;
+    opacity:0.3;
+    transition-duration: 1s ease;
+}
+
+.image-active{
+   width:11rem;
+    height:35vh;
+    border-radius: 1.2rem;
+    box-shadow: 0px 10px 8px yellow;
+    opacity:1;
+    transition-duration: 100ms;
+}
+
+.right-arrow{
+    position: absolute;
+    top:50%;
+    right:2rem;
+    font-size: 2rem;
+    color: #ccff33;
+    cursor: pointer;
+    z-index: 10;
+    user-select: none;
+}
+
+.left-arrow{
+    position: absolute;
+    top:50%;
+    left:2rem;
+    font-size: 2rem;
+    color:#ccff33;
+    cursor: pointer;
+    z-index: 10;
+    user-select: none;
+}
+
+.preview{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    border:2px solid #ccff33;
+    
+}
+
+.preview-image{
+    width: 95%;
+}
+
+
+.left-arrow:hover,.right-arrow:hover{
+transform: scale(1.2);
+}
+
+h2{
+    color:white;
+    margin-left: 1rem;
+    font-family: 'Montaga', serif;
+    font-size: 2rem;
+}
+
+@media (max-width:480px) {
+    html{
+        font-size: 10px;
+    }
+    .slider{
+       flex-wrap: wrap;
+
+    }
+
+    .image{
+        width: 2rem;
+    }
+    
+}
+
+@media (max-width:720px) and (min-width:480px){
+    html{
+        font-size: 12px;
+    }
+    .slider{
+       flex-wrap: wrap;
+
+    }
+
+    .image{
+        width: 4rem;
+    }
+}
