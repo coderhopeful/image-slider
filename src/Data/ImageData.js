@@ -1,3 +1,6 @@
+// All image data is stored here and exported to ImageSlider component
+
+
 export const ImageData= [
 {
     

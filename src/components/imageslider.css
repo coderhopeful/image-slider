@@ -93,6 +93,9 @@ h2{
     font-size: 2rem;
 }
 
+/* Media quiries were used to make the iste responsive by
+changing properties by screen break points */
+
 @media (max-width:420px) {
     html{
         font-size: 10px;
@@ -104,6 +107,8 @@ h2{
     }
     
 }
+
+
 
 @media (max-width:620px) and (min-width:420px){
     html{

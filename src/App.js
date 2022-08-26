@@ -1,5 +1,6 @@
 
-import './App.css';
+//ImageSlider comonent is imported here for display
+
 import ImageSlider from './components/ImageSlider';
 
 function App() {
